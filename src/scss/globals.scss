@@ -4,7 +4,8 @@ pre {
 	padding: 0;
 	margin: 0;
 	font-family: IRANSans, sans-serif;
-	direction: rtl;
+	direction: ltr;
+	overflow-x: hidden !important;
 }
 
 a {
@@ -37,6 +38,9 @@ pre {
 }
 
 .container {
-	width: 100%;
-	min-height: 100%;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
