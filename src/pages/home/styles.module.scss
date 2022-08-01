@@ -1,0 +1,15 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	margin-bottom: 64px;
+}
+
+.link {
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: underline;
+}
