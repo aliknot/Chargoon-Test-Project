@@ -8,6 +8,12 @@ export interface User {
 	description: string;
 }
 
+export interface InsertUser {
+	fullname: string;
+	password: string;
+	description: string;
+}
+
 export function getData() {
 	return new Promise((resolve, reject) => {
 		const data: User[] = [];
@@ -21,7 +27,7 @@ export function getData() {
 	});
 }
 
-export function insertData(data: User) {
+export function insertData(data: InsertUser) {
 	return new Promise((resolve, reject) => {
 		addDoc(collectionRef, data).then(() => {
 			resolve(true);
