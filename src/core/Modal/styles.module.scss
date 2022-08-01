@@ -1,0 +1,61 @@
+.modalWrap {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.backdrop {
+	inset: 0;
+	position: fixed;
+	background-color: rgba(31, 32, 41, 0.75);
+	opacity: 0;
+	transition: opacity 250ms 700ms ease;
+	z-index: -1;
+}
+
+.modal {
+	position: relative;
+	display: block;
+	max-width: 95%;
+	width: 400px;
+	height: auto;
+	margin: 20px auto;
+	border-radius: 4px;
+	background-color: #fff;
+	align-self: center;
+	box-shadow: 0 12px 25px 0 rgba(199, 175, 189, 0.25);
+	opacity: 0;
+	transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
+	transform: scale(0);
+	z-index: 1001;
+	padding: 32px;
+}
+
+.visible {
+	.backdrop {
+		pointer-events: auto;
+		z-index: 1000;
+		opacity: 1;
+		transition: all 300ms ease-in-out;
+	}
+
+	.modal {
+		opacity: 1;
+		transform: scale(1);
+		transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
