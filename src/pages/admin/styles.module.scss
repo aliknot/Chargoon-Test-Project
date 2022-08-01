@@ -1,0 +1,55 @@
+.admin {
+	text-align: center;
+}
+
+.title {
+	margin-bottom: 128px;
+}
+
+.subtitle {
+	text-align: left;
+	margin-bottom: 32px;
+}
+
+.users {
+	text-align: left;
+}
+
+.user {
+	cursor: pointer;
+	margin: 16px 0;
+}
+
+.userNumber {
+	margin-right: 32px;
+}
+
+.activeUser {
+	color: blue;
+}
+
+.actions {
+	margin-top: 64px;
+	padding-top: 16px;
+	border-top: 1px solid gray;
+}
+
+.labelWrapper {
+	display: flex;
+	align-items: flex-start;
+	margin: 16px;
+}
+
+.description {
+	margin-left: 64px;
+	text-align: left;
+}
+
+.modalActions {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	margin-top: 16px;
+	padding-top: 16px;
+	border-top: 1px solid gray;
+}
