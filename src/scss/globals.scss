@@ -1,0 +1,42 @@
+html,
+body,
+pre {
+	padding: 0;
+	margin: 0;
+	font-family: IRANSans, sans-serif;
+	direction: rtl;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+header,
+footer,
+nav,
+ol,
+ul {
+	list-style: none;
+}
+
+pre {
+	white-space: pre-line;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.container {
+	width: 100%;
+	min-height: 100%;
+}
